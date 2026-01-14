@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    background-image: url('images/background.png');
+    background-image: url('image/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

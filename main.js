@@ -19,15 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.modal-close').addEventListener('click', () => modal.style.display = 'none');
     modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none' })
 
-    // Add button behavior (cart removed): simple visual feedback
-    document.querySelectorAll('.add-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.classList.add('added');
-            btn.textContent = 'Added';
-            btn.disabled = true;
-        });
-    });
-
     // Filters
     document.querySelectorAll('.filter').forEach(btn => {
         btn.addEventListener('click', () => {
