@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rampurhat Breakery</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="#">Rampurhat Breakery</a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#top-sellers">Top Sellers</a></li>
+                    <li><a href="#products">Products</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Freshly Baked Every Day</h1>
+                <p>Artisan breads, pastries, cakes, and more — made with love.</p>
+                <a class="btn" href="#products">Shop Products</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="container section">
+            <h2>Gallery</h2>
+            <p class="muted">A tasty glimpse at our creations.</p>
+            <div class="grid gallery-grid">
+                <img src="images/choclatecake.png" alt="cake" data-large="images/cake.svg">
+                <img src="images/choclatepestry.png" alt="pastry" data-large="images/choclatepestry.png">
+                <img src="images/donut.png" alt="donut" data-large="images/donut.png">
+                <img src="images/bread.png" alt="bread" data-large="images/bread.png">
+            </div>
+        </section>
+
+        <section id="top-sellers" class="container section">
+            <h2>Top Sellers</h2>
+            <div class="grid product-grid">
+                <article class="card">
+                    <img src="images/choclatecake.png" alt="chocolate cake">
+                    <h3>Chocolate Cake</h3>
+                    <p class="price">rs 250</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+                <article class="card">
+                    <img src="images/cupcake.png" alt="cupcake">
+                    <h3>Vanilla Cupcake</h3>
+                    <p class="price">rs 45</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+                <article class="card">
+                    <img src="images/buggate.png" alt="buggate">
+                    <h3>Classic Baguette</h3>
+                    <p class="price">rs 65</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="products" class="container section">
+            <h2>Products</h2>
+            <p class="muted">Browse by category.</p>
+            <div class="filters">
+                <button class="filter active" data-cat="all">All</button>
+                <button class="filter" data-cat="cakes">Cakes</button>
+                <button class="filter" data-cat="pastries">Pastries</button>
+                <button class="filter" data-cat="breads">Breads</button>
+            </div>
+
+            <div class="grid product-grid" id="product-list">
+                <article class="card" data-cat="cakes">
+                    <img src="images/choclatecake.png" alt="cake">
+                    <h3>Chocolate Cake</h3>
+                    <p class="price">rs 200</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+                <article class="card" data-cat="pastries">
+                    <img src="images/choclatepestry.png" alt="danish">
+                    <h3>Fruit Danish</h3>
+                    <p class="price">rs 75</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+                <article class="card" data-cat="breads">
+                    <img src="images/sourdouge.png" alt="sourdouge">
+                    <h3>Sourdough Loaf</h3>
+                    <p class="price">rs 80</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+                <article class="card" data-cat="cakes">
+                    <img src="images/cupcake.png" alt="cupcake">
+                    <h3>Mini Cupcakes (6)</h3>
+                    <p class="price">rs 45</p>
+                    <button class="add-btn">Add to cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="img-modal" class="modal">
+        <span class="modal-close">×</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
